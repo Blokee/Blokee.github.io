@@ -1,90 +1,15 @@
-# Rain
-
-Rain is a simple and clean Jekyll theme with focus on content. It's a fork of [Tale theme](https://github.com/chesterhow/tale) with additional customizations.
-
-![](https://github.com/inelaah/rain/blob/master/images/screenshot.png)
-
-## Features
-- Compatible with GitHub Pages
-- Responsive design
-- Syntax highlighting
-- Markdown and HTML text formatting
-- Pagination of posts
-- Related articles section
-- Links to social media
+# Bloket blog
 
 
-## Getting Started
+## How to run 
+```docker run --name blog --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll jekyll serve```
 
-You will need to install Jekyll on your machine. Installation depends on your operating system and it is explained [here](https://jekyllrb.com/docs/installation/).
-
-Then create a new directory and clone this repository:
-
-```bash
-mkdir rain
-cd rain
-git clone https://github.com/inelaah/rain.git
-```
-
-Install all dependencies:
-
-```bash
-bundle install
-```
 
 ## Site Configuration
 
 There is a configuration file `_config.yml` in root directory. You should overwrite it to fit to your needs.
 
-An example of `_config.yml` looks like this:
-
-```bash
-# Site settings
-title:          Rain
-description:    "Rain is a simple and clean Jekyll theme with focus on content."
-url:            https://github.com/inelaah/rain
-
-# Author
-author:
-  name:         Inela Avdic Hukic
-  email:        inelaah@gmail.com
-  url:          https://inelaah.com
-
-# Build settings
-markdown:       kramdown
-
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
-
-# Gems
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  # - jemoji #Uncomment this to allow emoji in your post
-
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
-
-# Related posts settings
-related_posts_section:
-  max_count:        5
-  min_common_tags:  2
-
-# Links to social media
-social:
-  email: inelaah@gmail.com
-  github: https://github.com/inelaah
-  twitter: https://twitter.com
-  linkedin: https://ba.linkedin.com/in/inela-avdic-hukic-322354131
-```
-
 ## Favicons
-
-It is recommended to put your own favicons:
-
 - `apple-touch-icon.png` (180x180)
 - `favicon-32x32.png` (32x32)
 - `favicon-16x16.png` (16x16)
